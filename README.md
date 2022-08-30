@@ -1,2 +1,2 @@
 # cultural-contents-database
-Application created to manage my own cultural or entertainment interests. 
+- An api dealing with a postgres database, created to manage my own cultural or entertainment interests. 
