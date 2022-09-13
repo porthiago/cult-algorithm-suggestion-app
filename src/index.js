@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }));
 
 app.use('/content', contentRouter);
 app.use('/rating', ratingRouter);

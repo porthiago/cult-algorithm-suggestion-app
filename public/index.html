@@ -9,7 +9,7 @@
 <body>
     <h1>Cultural Contents Organizer</h1>
     <h2>Content</h2>
-    <form action="">
+    <form action="/content" method="post">
         <label for="name">Title</label>
         <input type="text" name="name" id="title">
         <br>
@@ -43,31 +43,6 @@
         <br>
         <br> -->
         <button type="submit" id="submit">Submit</button>
-        <br>
-        <br>
-        <button type="get" id="get">Get List</button>
     </form>
-    <script>
-
-        const postBtn = document.getElementById('submit');
-        postBtn.addEventListener('click', postInfo);
-
-        async function postInfo(e) {
-            console.log(name.value)
-            e.preventDefault();
-            if (!input.value) { return }
-            const res = await fetch('localhost:8000/content', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    name: name.value,
-                    situation: situation.value,
-                    type: type.value
-                })
-            });
-        }
-    </script>
 </body>
 </html>
