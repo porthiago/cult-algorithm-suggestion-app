@@ -8,10 +8,11 @@ const ratingRouter = require('./routes/ratingRouter');
 const PORT = process.env.PORT || 8000;
 
 app.use(express.json());
+app.use(express.static('public'));
 
 app.use('/content', contentRouter);
 app.use('/rating', ratingRouter);
 
 app.listen(PORT, () => {
-  console.log('Server is running on port 8000');
+  console.log(`Server running on port ${PORT}`);
 });
