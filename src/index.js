@@ -15,5 +15,5 @@ app.use('/content', contentRouter);
 app.use('/rating', ratingRouter);
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port http://localhost:${PORT}`);
 });

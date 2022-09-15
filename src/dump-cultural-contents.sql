@@ -5,11 +5,11 @@ CREATE TABLE IF NOT EXISTS contents (
   	name TEXT NOT NULL,
   	situation TEXT NOT NULL,
   	type TEXT NOT NULL,
-	author TEXT
+	author TEXT,
 	released_date DATE NOT NULL,
 	genre TEXT,
 	tags TEXT,
-	url_reference TEXT,
+	url_reference TEXT
 );
 
 CREATE TABLE IF NOT EXISTS rating (
