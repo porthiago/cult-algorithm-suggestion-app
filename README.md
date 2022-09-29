@@ -1,7 +1,7 @@
 # Cultural Contents Algorithm
 
 
-- App to manage my own cultural or entertainment interests.
-- Using my own algorithm to suggest a variety types of content to relate
-- The system works with a API Rest integrated to a postgres database
-- It's a very personal system using very personal criterias for definitions of content suggestions
+- App para gerenciar meus próprios interesses cultura pop.
+- Uso de meu próprio algoritmo para sugerir uma variedade de tipos de conteúdo para me relacionar
+- O sistema funciona com uma API Rest integrada a um banco de dados PostgresSQL
+- É um sistema muito pessoal, usando critérios muito pessoais, para definições de sugestões de conteúdo
